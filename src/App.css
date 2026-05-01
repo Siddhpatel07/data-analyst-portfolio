@@ -74,7 +74,7 @@ section {
 /* --- Increased from 96px to 120px --- */
 header[id],
 section[id] {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 55px;
 }
 
 .top-nav {
@@ -436,7 +436,7 @@ footer p {
   /* --- Increased from 140px to 160px --- */
   header[id],
   section[id] {
-    scroll-margin-top: 90px;
+    scroll-margin-top: 75px;
   }
 }
 

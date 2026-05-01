@@ -12,7 +12,7 @@
 
 /* --- Added this to fix the overlap and make scrolling smooth --- */
 html {
-  scroll-padding-top: 80px; 
+  scroll-padding-top: 55px; 
   scroll-behavior: smooth;   
 }
 
