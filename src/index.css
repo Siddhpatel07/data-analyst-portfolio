@@ -1,0 +1,45 @@
+:root {
+  --text: #1a1a1a;
+  --text-h: #000000;
+  --bg: #ececec;
+  --border: #bcbcbc;
+  --accent-bg: #e8e8e8;
+  --accent-border: #9f9f9f;
+  --social-bg: #f7f7f7;
+  --shadow: rgba(0, 0, 0, 0.08) 0 8px 18px -10px;
+  --muted: #4f4f4f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  margin: 0 0 12px;
+}
+
+p {
+  margin: 0;
+}
