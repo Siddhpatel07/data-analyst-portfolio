@@ -425,18 +425,46 @@ footer p {
   }
 
   /* --- NEW: Swipeable Mobile Menu --- */
+  /* --- Sleek Mobile Menu with Visual Scroll Indicator --- */
   .top-nav {
     justify-content: flex-start;
-    flex-wrap: nowrap;      /* Stops the items from stacking */
-    overflow-x: auto;       /* Allows swiping horizontally */
-    -ms-overflow-style: none;  /* Hides scrollbar in IE/Edge */
-    scrollbar-width: none;     /* Hides scrollbar in Firefox */
-    padding: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px 10px 14px 10px; /* Slight extra bottom padding for the bar */
+    
+    /* Firefox support */
+    scrollbar-width: thin;
+    scrollbar-color: #ff5a36 rgba(255, 255, 255, 0.05);
   }
 
-  /* Hides scrollbar in Chrome/Safari/Phones */
+  /* Custom thin scrollbar for Chrome, Safari, Edge, and Mobile */
   .top-nav::-webkit-scrollbar {
-    display: none;
+    height: 3px;          /* Makes it an ultra-thin line */
+    display: block;       /* Un-hides it */
+  }
+
+  .top-nav::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    margin: 0 15px;       /* Keeps the line neatly inside your rounded corners */
+  }
+
+  .top-nav::-webkit-scrollbar-thumb {
+    background: #ff5a36;  /* Your theme's orange accent color */
+    border-radius: 10px;
+  }
+
+  .top-nav a,
+  .match-progress {
+    flex-shrink: 0;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .match-progress {
+    width: auto;
+    text-align: center;
+    margin-right: 8px;    /* Gives it breathing room when scrolled to the very end */
   }
 
   /* Prevents the text from squishing when swiping */
