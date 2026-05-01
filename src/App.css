@@ -424,16 +424,34 @@ footer p {
     padding: 16px;
   }
 
+  /* --- NEW: Swipeable Mobile Menu --- */
   .top-nav {
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;      /* Stops the items from stacking */
+    overflow-x: auto;       /* Allows swiping horizontally */
+    -ms-overflow-style: none;  /* Hides scrollbar in IE/Edge */
+    scrollbar-width: none;     /* Hides scrollbar in Firefox */
+    padding: 10px;
+  }
+
+  /* Hides scrollbar in Chrome/Safari/Phones */
+  .top-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Prevents the text from squishing when swiping */
+  .top-nav a,
+  .match-progress {
+    flex-shrink: 0;
+    font-size: 0.9rem;      /* Slightly smaller text for mobile */
+    padding: 6px 12px;
   }
 
   .match-progress {
-    width: 100%;
+    width: auto;            /* Resets the width so it fits in the row */
     text-align: center;
   }
 
-  /* --- Increased from 140px to 160px --- */
   header[id],
   section[id] {
     scroll-margin-top: 75px;
