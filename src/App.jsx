@@ -206,7 +206,7 @@ function App() {
               <a href="mailto:siddhpatel713@gmail.com">siddhpatel713@gmail.com</a>
               <a href="tel:+916352785294">+91 635 278 5294</a>
               <a
-                href="https://linkedin.com/in/siddh-patel"
+                href="https://www.linkedin.com/in/siddh-patel-07012003s"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -351,12 +351,12 @@ function App() {
             <strong>Phone:</strong> +91 635 278 5294
           </a>
           <a
-            href="https://linkedin.com/in/siddh-patel"
+            href="https://www.linkedin.com/in/siddh-patel-07012003s"
             target="_blank"
             rel="noreferrer"
             className="contact-item"
           >
-            <strong>LinkedIn:</strong> linkedin.com/in/siddh-patel
+            <strong>LinkedIn:</strong> linkedin.com/in/siddh-patel-07012003s
           </a>
           <a
             href="https://hackerrank.com/siddhpatel713"
