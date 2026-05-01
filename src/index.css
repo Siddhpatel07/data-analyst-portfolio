@@ -10,6 +10,12 @@
   --muted: #4f4f4f;
 }
 
+/* --- Added this to fix the overlap and make scrolling smooth --- */
+html {
+  scroll-padding-top: 120px; 
+  scroll-behavior: smooth;   
+}
+
 * {
   box-sizing: border-box;
 }

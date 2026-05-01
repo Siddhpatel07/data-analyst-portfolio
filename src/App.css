@@ -71,10 +71,10 @@ section {
   margin-top: 20px;
 }
 
-/* Prevent sticky nav from covering section titles on hash navigation */
+/* --- Increased from 96px to 120px --- */
 header[id],
 section[id] {
-  scroll-margin-top: 96px;
+  scroll-margin-top: 120px;
 }
 
 .top-nav {
@@ -433,9 +433,10 @@ footer p {
     text-align: center;
   }
 
+  /* --- Increased from 140px to 160px --- */
   header[id],
   section[id] {
-    scroll-margin-top: 140px;
+    scroll-margin-top: 160px;
   }
 }
 
