@@ -71,6 +71,12 @@ section {
   margin-top: 20px;
 }
 
+/* Prevent sticky nav from covering section titles on hash navigation */
+header[id],
+section[id] {
+  scroll-margin-top: 96px;
+}
+
 .top-nav {
   position: sticky;
   top: 0;
@@ -425,6 +431,11 @@ footer p {
   .match-progress {
     width: 100%;
     text-align: center;
+  }
+
+  header[id],
+  section[id] {
+    scroll-margin-top: 140px;
   }
 }
 
